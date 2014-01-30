@@ -1,6 +1,7 @@
 $navbarBackgroundHighlight: white;
 $navbarBackground: white;
-$btnPrimaryBackground: black;
+$btnPrimaryBackground: #999999;
+$btnPrimaryBackgroundHighlight: #a3a3a3;
 @import "bootstrap";
 
 /* mixins, variables, etc. */
@@ -31,6 +32,12 @@ textarea {
     margin-bottom: 10px;
   }
 }
+
+.table td {
+   text-align: left;
+
+}
+
 
 /* typography */
 

@@ -1,10 +1,27 @@
 <div class= "center hero-unit">
-    <h1>Upcoming Events</h1>
+    <div class="well">
     <!--<h2>Naughty in N'awlins</h2>
     <h3>Aug 6-10, 2014</h3>-->
-     <a href="https://secureregistrationonline.com/new_nin/signup.php?affiliateId=1889" target="_blank"><img src="https://secureregistrationonline.com/images/nin_250x55.jpg" alt="Naughty in N'awlins" border="0" target="_blank"></a>
-    <h2>
-    <%= link_to ("Sign up Now"), "https://secureregistrationonline.com/new_nin/signup.php?affiliateId=1889", class: "btn btn-large btn-primary", target: '_blank' %>
-    </h2>
+    <table class="table table-stripped">
+              <thead>
+                <tr>
+                    <h1>Upcoming Events</h1>
+                </tr>
+
+              </thead>
+
+              <tbody>
+                <tr>
+
+                  <td><a href="https://secureregistrationonline.com/new_nin/signup.php?affiliateId=1889" target="_blank"><img src="https://secureregistrationonline.com/images/nin_250x55.jpg" alt="Naughty in N'awlins" border="0" target="_blank"></a>
+                  </td>
+                  <td><%= link_to ("More Info"), "https://secureregistrationonline.com/new_nin/signup.php?affiliateId=1889", class: "btn btn-large btn-primary", target: '_blank' %>
+                  </td>
+                  <td><%= link_to ("Sign Up Now"), "https://secureregistrationonline.com/new_nin/signup.php?affiliateId=1889", class: "btn btn-large btn-primary", target: '_blank' %>
+                  </td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
 </div>
 
