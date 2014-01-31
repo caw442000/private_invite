@@ -1,8 +1,14 @@
 <div class= "center hero-unit">
-    <%= link_to image_tag("PIKEYLargeLogo.png",size:"300x131", alt: "Private Invite"), 'http://privateinvite.io/' %>
+    <% if user_signed_in? %>
+    <%= link_to image_tag("PIKEYLargeLogo.png",size:"300x131", alt: "Private Invite"), root_path %>
+    <br>
+    <%= link_to "Send An Invite!", new_user_invitation_path, class: "btn btn-large btn-primary" %>
+
+    <% else %>
+    <%= link_to image_tag("PIKEYLargeLogo.png",size:"300x131", alt: "Private Invite"), root_path %>
     <!--<h1>Private Invite</h1>-->
-    <h2>Have you been invited?</h2>
+    <h2>Invite Only - Still in Beta</h2>
 
-    <%= link_to "Request an invite!", '#', class: "btn btn-large btn-primary" %>
-
+    <%= link_to "Sign In", new_user_session_path, class: "btn btn-large btn-primary" %>
+    <% end %>
 </div>
